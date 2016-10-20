@@ -1,0 +1,20 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" controllerName="zcchelloworld.controller.Main">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm editable="true" layout="ResponsiveGridLayout" id="__form0" maxContainerCols="1">
+					    <f:content>
+					        <core:Title text="Connect to Backend Service Z_COMMON_SRV" id="__title0"/>
+							<Label text="Service URL" id="lblURL" labelFor="txtURL"/>
+							<Input id="txtURL" value="{helloWorld>/url}"/>
+							<Button id="btnGo" press="onGo" text="Go" width="6em"/>
+							<Label text="Result" id="lblResult" labelFor="txtResult"/>
+							<TextArea id="txtResult" value="{helloWorld>/resultText}" width="100%" rows="40" editable="false"/>
+					    </f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
